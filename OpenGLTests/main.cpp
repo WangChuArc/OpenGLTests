@@ -16,7 +16,6 @@
 #include<string>
 #include<fstream>
 
-#include"../../currying/CurryinginCPP/source/currying.hpp"
 #include"shaderHandle.h"
 #include"assimpModelLoad.h"
 #include"modelHandle.h"
