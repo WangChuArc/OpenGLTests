@@ -87,7 +87,7 @@
       <CompileAsManaged>false</CompileAsManaged>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>.\libs\lib3ds\lib3ds20.lib;.\libs\lib3ds\lib3ds.lib;.\libs\FreeImage\Dist\x32\FreeImage.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;glu32.lib;opengl32.lib;external\glfw-3.1.2\src\Debug\glfw3.lib;external\Debug\GLEW_1130.lib</AdditionalDependencies>
+      <AdditionalDependencies>.\libs\SOIL\SOIL.lib;.\libs\glew-1.13.0\lib\Release\Win32\glew32s.lib;.\libs\glfw-3.2.1\libs\x86\glfw3.lib;.\libs\assimp\assimp-vc140-mt.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;glu32.lib;opengl32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\Users\储\workspace\C++\OpenGLTests\OpenGLTests\libs\lib3ds;C:\Users\储\workspace\C++\OpenGLTests\OpenGLTests\libs\FreeImage\Dist\x32;C:\Users\储\workspace\C++\OpenGLTests;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
@@ -128,36 +128,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="assimpModelLoad.h" />
+    <ClInclude Include="camera.h" />
     <ClInclude Include="global.h" />
-    <ClInclude Include="libs\FreeImage\Dist\x32\FreeImage.h" />
-    <ClInclude Include="libs\lib3ds\lib3ds.h" />
-    <ClInclude Include="libs\lib3ds\lib3ds_impl.h" />
-    <ClInclude Include="libs\lib3ds\lib3ds_types.h" />
+    <ClInclude Include="matrix.h" />
     <ClInclude Include="matrixHandle.h" />
     <ClInclude Include="modelHandle.h" />
     <ClInclude Include="shaderHandle.h" />
+    <ClInclude Include="template_SFINAE.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="common\shader.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="assimpModelLoad.cpp" />
     <ClCompile Include="global.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="matrixHandle.cpp" />
-    <ClCompile Include="shaderHandle.cpp" />
+    <ClCompile Include="modelHandle.cpp" />
+    <ClCompile Include="matrix.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\TextFile1.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </Text>
-    <Text Include="..\TextFile2.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="SHADERS\tri.fragmentshader" />
-    <None Include="SHADERS\tri.geometeryshader" />
-    <None Include="SHADERS\tri.vertexshader" />
+    <None Include="SHADERS\shader.frag" />
+    <None Include="SHADERS\shader.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

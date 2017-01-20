@@ -3,5 +3,5 @@ using namespace global;
 
 namespace global
 {
-    const float PI = 3.1415926f;
+    unsigned int UnsignedIntGenerator() { static unsigned int i = 0; return ++i; }
 }

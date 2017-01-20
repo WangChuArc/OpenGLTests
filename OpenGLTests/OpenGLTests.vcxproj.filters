@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="global.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="matrixHandle.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="matrix.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="modelHandle.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="assimpModelLoad.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="global.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="matrixHandle.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="shaderHandle.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="matrix.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="template_SFINAE.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="modelHandle.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="assimpModelLoad.h">
+      <Filter>header</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SHADERS\shader.frag">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="SHADERS\shader.vs">
+      <Filter>resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="header">
+      <UniqueIdentifier>{b5574fb5-4e91-410c-b4b6-d152c039a877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{7d25d20c-d142-4320-b4b3-ee067c53f5ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{10021870-02c8-42c2-b96f-2671ebdc93e3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
