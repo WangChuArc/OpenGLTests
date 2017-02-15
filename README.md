@@ -4,7 +4,7 @@
 因为是在VisualStudio 2015环境下写的，而且是win32 debug版本，用起来可能有些麻烦。。而且追加后续功能最好还是要个界面，因此我又写了一个Qt版本的。。地址是https://github.com/WangChuArc/QtModelViewer  可能以后的主要的更新都在那个项目上了。这个项目姑且保存吧。。说不定可以用来写点别的东西。
 
 
-忽然发现git.ignore把obj文件屏蔽了！模型没传上去！
+忽然发现git.ignore把obj文件屏蔽了！模型没传上去！现在才传上去了!
 
 
 **update 2017-1-24**
